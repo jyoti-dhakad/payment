@@ -2,9 +2,6 @@ class PaymentsController < ApplicationController
   
 
   def create
-    debugger
-    
-    
     order = Order.find_by(id: params[:payment][:order_id])
     
     customer = order.customer
